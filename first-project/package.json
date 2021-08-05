@@ -1,0 +1,21 @@
+{
+  "name": "first-project",
+  "version": "1.0.0",
+  "description": "This is my first node project",
+  "main": "index.js",
+  "scripts": {
+    "iniciar": "echo 'hola desde script'; echo 'este es otro eco'",
+    "start": "echo 'Ejecuta inicio'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "kodemia",
+    "Test",
+    "12g"
+  ],
+  "author": "HectorHA",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
+}
