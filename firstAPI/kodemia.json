@@ -1,1 +1,53 @@
-{"koders":[{"name":"Carlos Velasquez","generation":12},{"name":"Juan Pi","generation":10},{"name":"Fernanda","generation":7},{"name":"Vero","generation":10},{"name":"Cintia","generation":10},{"name":"Freddy","generation":12}]}
+{
+    "koders": [{
+        "id": 1,
+        "name": "Carlos Velasquez",
+        "generation": 12
+    }, {
+        "id": 2,
+        "name": "Juan Pi",
+        "generation": 10
+    }, {
+        "id": 3,
+        "name": "Fernanda",
+        "generation": 7
+    }, {
+        "id": 4,
+        "name": "Vero",
+        "generation": 10
+    }, {
+        "id": 5,
+        "name": "Cintia",
+        "generation": 10
+    }, {
+        "id": 6,
+        "name": "Freddy",
+        "generation": 12
+    }, {
+        "id": 7,
+        "name": "Hector HA",
+        "generation": 12
+    }],
+    "mentor":[
+        {
+            "id": 1,
+            "name":"Mels",
+            "module": "Hello Koder"
+        },
+        {
+            "id": 2,
+          "name":"Oso",
+          "module":"Hello Koder"
+        },
+        {
+            "id": 3,
+            "name":"Isra",
+            "module":"Frontend"
+        },
+        {
+            "id": 4,
+            "name":"Fer",
+            "module":"Backend"
+        }
+    ]
+}
