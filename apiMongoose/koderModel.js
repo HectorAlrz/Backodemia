@@ -6,28 +6,42 @@ const koderSchema = new mongoose.Schema({
     type: String,
     minLength: 2,
     maxLength: 50,
-    require: true
+    required: true
     },
 lastName: {
     type: String,
     minLength: 2,
     maxLength: 50,
-    require: true,
+    required: true,
     trim: true
     },
 age: {
     type: Number,
     min: 0,
     max: 90,
-    require: true,
+    required: true,
     trim: true
     },
 gender: {
     type: String,
     enum: ['m', 'f'],
-    require: true
+    required: true
+    },
+generation: {
+    type: Number,
+    min: 1,
+    required: true,
+    trim: true
     }
 })
+
+//const koder ={
+//    name: 'karen',
+//    adress: {
+//        street: 'cdmx',
+//        num: "#4"
+//    }
+//}
 
 const model = mongoose.model('koders', koderSchema)
 // Exportamos 
