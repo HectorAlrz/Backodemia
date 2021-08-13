@@ -53,16 +53,17 @@ router.findByIdAndDelete('/',async (request, response)=> {
         
         response.json({
             succes: true,
-            messages: "Mentor dismiss",
+            messages: "Mentor dismissed",
             data: {
-            mentor: mentorDeleted
+                mentor: mentorDeleted
             }
-        })
-
+        }) 
     } catch(error){
-        success: false,
-        message: "There is something wrong in the code, go back!!",
-        error: error.message
+        response.json({
+            success: false,
+            message: "There is something wrong in the code, go back!!",
+            error: error.message
+        })
     }
 })
 module.exports = router
