@@ -1,15 +1,24 @@
 const Koder = require('../models/koders')
 
 function getAll() {
-    return Koder.find()
+    return Koder.find();
 }
 
-function createKoder(newKoder){
-    return Koder.Create(newKoder)
+function createKoder(koder){
+    return Koder.create(koder);;
 }
 
+
+function deleteById(id){
+    return Koder.findByIdAndDelete(id);
+}
+
+function updateById(id, newData){
+    return Koder.findByIdAndUpdated(id, newData, {update: true})
+}
 
 module.exports = {
     getAll: getAll,
-    createrKoder: createKoder
+    createKoder: createKoder,
+    deleteById: deleteById
 }
